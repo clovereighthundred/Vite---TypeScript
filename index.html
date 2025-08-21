@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Management App</title>
+    <script type="module" src="/src/main.ts"></script>
+  </head>
+  <body>
+    <div id="container">
+      <header id="caption">
+        <h1>Taskmaster 📝</h1>
+        <p>An app to create, update and manage your daily tasks.</p>
+      </header>
+
+      <div id="task-input-container">
+        <input type="text" id="task-input" placeholder="Type your task here..." />
+        <button id="addTaskBtn">ADD</button>
+      </div>
+
+      <ul id="task-list">
+        <li class="task-item">
+          <input type="checkbox" id="task1">
+          <label class="task-name" for="task-text">Submit to the Leviathan</label>
+          <button class="deleteTaskBtn">X</button>
+        </li>
+
+        <li class="task-item">
+          <input type="checkbox" id="task2">
+          <label class="task-name" for="task-text">Buy groceries</label>
+          <button class="deleteTaskBtn">X</button>
+        </li>
+
+        <li class="task-item">
+          <input type="checkbox" id="task3">
+          <label class="task-name" for="task-text"></label>
+          <button class="deleteTaskBtn">X</button>
+        </li> 
+      </ul>
+
+      <button id="clearTaskBtn">CLEAR</button>
+    </div>
+    
+  </body>
+</html>

@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+html{
+  background-color: #000;
+  font-family: system-ui;
+}
+body{
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1{
+  margin: 5px 10px;
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+  color: #08c4c1;
+}
+p{
+  padding: 5px;
+  margin: 0 0 10px 0; 
+  font-size: 1.5em;
+  text-align: center;
+  color: #fff;
+}
+#task-input-container{
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  gap: 10px;
+}
+#task-input{
+  flex: 1;
+  padding: 10px;
+  margin: 5px 0; 
+  border: 2px solid black;
+  border-radius: 50px;
+  font-size: 1.5em;
+  color: hsl(0, 0%, 100%);
+  background-color: transparent;
+}
+#addTaskBtn{
+  padding: 5px 20px;
+  background-color: #08c4c1;
+  border: none;
+  border-radius: 50px;
+  font-size: 1.5em;
+  font-weight: bold; 
+  color: #000;
+  cursor: pointer;
+}
+#addTaskBtn:hover{
+  background-color: hsl(179, 92%, 50%); 
+}
+#task-list{
+  width: 100%;
+  max-width: 600px;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+#task-list li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 20px 0;
+  font-size: 1.5em;
+  color: #fff; 
+  background-color: hsla(0, 0%, 100%, 0.3);
+  border-radius: 15px;
+  min-height: 50px;
+}
+#task-list li input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+  accent-color: #007bff;
+  cursor: pointer;
+}
+#task-list li input[type="checkbox"]:checked + label{
+  text-decoration: line-through;
+  color: hsl(0, 0%, 40%);
+}
+.task-name {
+  flex: 1;
+  margin-left: 10px; 
+}
+.deleteTaskBtn{
+  padding: 5px 10px;
+  background-color: hsl(179, 92%, 40%);
+  border: none;
+  border-radius: 50px;
+  color: #000;
+  cursor: pointer;
+}
+.deleteTaskBtn:hover{
+  background-color: hsl(179, 92%, 50%);
+}
+#clearTaskBtn{
+  display: block;
+  margin: 20px auto;  
+  padding: 10px 20px;
+  background-color: #000;
+  border: 2px solid hsl(0, 100%, 60%);
+  border-radius: 50px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+#clearTaskBtn:hover{
+  background-color: hsl(0, 100%, 60%);
+} 
