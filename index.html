@@ -8,35 +8,38 @@
     <script type="module" src="/src/main.ts"></script>
   </head>
   <body>
-    <div id="container">
+    <div id="app-container">
       <header id="caption">
         <h1>Taskmaster 📝</h1>
         <p>An app to create, update and manage your daily tasks.</p>
       </header>
 
       <div id="task-input-container">
-        <input type="text" id="task-input" placeholder="Type your task here..." />
-        <button id="addTaskBtn">ADD</button>
+        <form action="" id="task-input">
+          <input type="text" id="task-input-box" placeholder="Type your task here..." />
+          <button id="addTaskBtn">ADD</button>
+        </form>
+        
       </div>
 
       <ul id="task-list">
-        <li class="task-item">
+        <!-- <li class="task-item">
           <input type="checkbox" id="task1">
-          <label class="task-name" for="task-text">Submit to the Leviathan</label>
+          <label class="task-name" for="task1">Submit to the Leviathan</label>
           <button class="deleteTaskBtn">X</button>
         </li>
 
         <li class="task-item">
           <input type="checkbox" id="task2">
-          <label class="task-name" for="task-text">Buy groceries</label>
+          <label class="task-name" for="task2">Buy groceries</label>
           <button class="deleteTaskBtn">X</button>
         </li>
 
         <li class="task-item">
           <input type="checkbox" id="task3">
-          <label class="task-name" for="task-text"></label>
+          <label class="task-name" for="task3"></label>
           <button class="deleteTaskBtn">X</button>
-        </li> 
+        </li>  -->
       </ul>
 
       <button id="clearTaskBtn">CLEAR</button>
